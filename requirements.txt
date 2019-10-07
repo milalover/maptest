@@ -26,4 +26,3 @@ traitlets==4.3.2
 Werkzeug==0.15.4
 geoplot==0.3.2
 geopandas==0.4.1
-geos==3.7.1
