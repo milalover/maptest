@@ -11,6 +11,7 @@ ADD ./webapp /opt/webapp/
 WORKDIR /opt/webapp
 
 RUN conda install cython
+RUN conda install cartopy
 RUN conda install geopandas
 RUN conda install geoplot
 
