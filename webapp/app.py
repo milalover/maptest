@@ -37,7 +37,7 @@ balts = shapefilereader("iho.zip")
 #sns.set(style=”whitegrid”, palette=”pastel”, color_codes=True)
 #sns.mpl.rc(“figure”, figsize=(10,6))
 
-shp_path = 'shapet/shapet/maakunnat2021_100000.shp'
+shp_path = 'maakunnat2021_100000.shp'
 finland = geopandas.read_file(shp_path)
 
 
