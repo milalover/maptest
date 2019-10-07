@@ -26,30 +26,29 @@ world = geopandas.read_file(
 )
 
 # oceans and seas shapefile
-oceans = shapefilereader('World_Seas_IHO_v3.zip')
-oceans = oceans.assign(featurecla = 'Ocean')[['NAME','geometry','featurecla']]\
-.rename(columns={'NAME':'name'}) 
+#oceans = shapefilereader('World_Seas_IHO_v3.zip')
+#oceans = oceans.assign(featurecla = 'Ocean')[['NAME','geometry','featurecla']]\.rename(columns={'NAME':'name'}) 
 
 balts = shapefilereader("iho.zip")
-finland = balts.assign(name='Gulf of Finland')[[]]
+#finland = balts.assign(name='Gulf of Finland')[[]]
 #geoplot.choropleth(
 #    world, hue=world['gdp_md_est'] / world['pop_est'],
 #    cmap='Greens', figsize=(8, 4)
 #)
 
-ocean_test = geoplot.choropleth(
-    oceans, hue=world['gdp_md_est'] / world['pop_est'],
-    cmap='Greens', figsize=(8, 4)
-)
+#ocean_test = geoplot.choropleth(
+#    oceans, hue=world['gdp_md_est'] / world['pop_est'],
+#    cmap='Greens', figsize=(8, 4)
+#)
 
 baltic_test = geoplot.choropleth(
     balts, hue=world['gdp_md_est'] / world['pop_est'],
     cmap='Greens', figsize=(8, 4)
 )
-finland_test = geoplot.choropleth(
-    finland, hue=world['gdp_md_est'] / world['pop_est'],
-    cmap='Greens', figsize=(8, 4)
-)
+#finland_test = geoplot.choropleth(
+#    finland, hue=world['gdp_md_est'] / world['pop_est'],
+#    cmap='Greens', figsize=(8, 4)
+#)
 
 #ocean_test #display map
 #baltic_test
